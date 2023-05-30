@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form Test</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Data Collection Project</h1>
+  <p id="description">Thank you for taking the time to help us improve our services</p>
+    <form id="survey-form" method="post"
+      <fieldset>
+        <label id="name-label" for="name-label">Name <input id="name" name="name" type="text" required placeholder="Johny Bravo"/></ label>
+        <label id="number-label" for="number-label">Age <input id="number" name="number" type="number"  min="18" max="120" placeholder="25" /></label>
+        <label id="email-label" for="email-label">Email <input id="email" name="email" type="email" required placeholder="johnybravo@yaymail.com"/></label>
+      </fieldset>
+      <fieldset>
+        <label for="referrer">How was your experience?
+          <select id="dropdown" name="dropdown-list">
+            <option value="">(select one)</option>
+            <option value="1">Terrible</option>
+            <option value="2">Bad</option>
+            <option value="3">Ok</option>
+            <option value="4">Good</option>
+            <option value="4">Very Good</option>
+          </select>
+        </label>
+       </fieldset>
+       <fieldset>
+         <p id="recommendation"> Would you recommend us? </p>
+        <label for="definitely-radio"><input id="definitely-radio" type="radio" name="response" class="inline" value="recommendation"/> Definitely</label>
+        <label for="maybe-ratio"><input id="maybe-ratio" type="radio" name="response" class="inline" value="recommendation"/> Maybe</label>
+        <label for="never-ratio"><input id="never-ratio" type="radio" name="response" class="inline" value="recommendation"/> Never</label>
+        </fieldset>
+        <fieldset> 
+          <p id="menu"> What did you eat? </p>   
+        <label for="pizza-check">
+          <input id="pizza-check" type="checkbox" name="pizza" class="inline" value="menu"/>Pizza</label>
+          <label for="pasta-check"><input id="pasta-check" type="checkbox" name="pasta" class="inline" value="menu"/>Pasta</label>
+          <label for="meat-check"><input id="meat-check" type="checkbox" name="meat" class="inline" value="menu"/>Beef</label>
+      <label for="soup-check"><input id="soup-check" type="checkbox" name="soup" class="inline" value="menu"/>Soup</label>
+      </fieldset> 
+      </label>
+        <label for="bio">Any comments or suggestions?:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like the spagetthi with..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>  
+</body>
+</html>
